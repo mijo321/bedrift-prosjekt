@@ -1,0 +1,14 @@
+.carousel-image {
+  display: none;
+  width: 50vh;
+  height: 25vh;
+  object-fit: cover;
+}
+
+.prev, .next {
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
