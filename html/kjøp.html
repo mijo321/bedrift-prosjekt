@@ -35,20 +35,52 @@
             <!-- User information form -->
             <form id="checkoutForm" class="w-1/2 mr-5">
                 <h2 class="text-2xl font-bold mb-5">Checkout</h2>
+                <!-- Shipping Address -->
+                <h3 class="text-xl font-bold mb-2">Shipping Address</h3>
                 <div class="mb-5">
-                    <label class="font-bold mb-2">Name</label>
-                    <input type="text" id="name" class="w-full p-2 border rounded">
+                    <label class="font-bold mb-2">Full Name</label>
+                    <input type="text" id="shippingName" class="w-full p-2 border rounded">
                 </div>
                 <div class="mb-5">
-                    <label class="font-bold mb-2">Email</label>
-                    <input type="email" id="email" class="w-full p-2 border rounded">
+                    <label class="font-bold mb-2">Address</label>
+                    <input type="text" id="shippingAddress" class="w-full p-2 border rounded">
+                </div>
+                <div class="mb-5">
+                    <label class="font-bold mb-2">City</label>
+                    <input type="text" id="shippingCity" class="w-full p-2 border rounded">
+                </div>
+                <div class="mb-5">
+                    <label class="font-bold mb-2">State</label>
+                    <input type="text" id="shippingState" class="w-full p-2 border rounded">
+                </div>
+                <div class="mb-5">
+                    <label class="font-bold mb-2">Zip</label>
+                    <input type="text" id="shippingZip" class="w-full p-2 border rounded">
+                </div>
+            
+                <h3 class="text-xl font-bold mb-2">Payment Information</h3>
+                <div class="mb-5">
+                    <label class="font-bold mb-2">Cardholder's Name</label>
+                    <input type="text" id="cardName" class="w-full p-2 border rounded">
                 </div>
                 <div class="mb-5">
                     <label class="font-bold mb-2">Card Number</label>
-                    <input type="text" id="card" class="w-full p-2 border rounded">
+                    <input type="text" id="cardNumber" class="w-full p-2 border rounded">
                 </div>
+                <div class="flex justify-between mb-5">
+                    <div class="w-1/2 pr-2">
+                        <label class="font-bold mb-2">Expiry Date</label>
+                        <input type="month" id="expiryDate" class="w-full p-2 border rounded">
+                    </div>
+                    <div class="w-1/2 pl-2">
+                        <label class="font-bold mb-2">CVV</label>
+                        <input type="text" id="cvv" class="w-full p-2 border rounded">
+                    </div>
+                </div>
+            
                 <button type="submit" class="w-full py-3 bg-green-500 hover:bg-green-700 text-white font-bold rounded">Submit</button>
             </form>
+            
             <!-- End of user information form -->
 
             <!-- Cart items -->
