@@ -15,23 +15,24 @@
     <nav class="bg-green-900 flex justify-between items-center h-16">
         <a href="index.html" class="text-white text-4xl ml-4">FreshBite</a>
         
-        <input type="checkbox" id="active">
-        <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
-        <div class="wrapper">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="bestill.html">Bestill</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Feedback</a></li>
-            </ul>
+        <div class="z-10">
+            <input type="checkbox" id="active">
+            <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+            <div class="wrapper">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bestill.html">Bestill</a></li>
+                    <li><a href="cart.html">Handlekurv</a></li>
+                </ul>
+            </div>
         </div>
+        
     </nav>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#14532D" fill-opacity="1" d="M0,128L80,112C160,96,320,64,480,80C640,96,800,160,960,170.7C1120,181,1280,139,1360,117.3L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
     
-    <div class="section ml-28 relative -z-10">
+    <div class="section relative mx-16">
         <!-- Checkout form -->
-        <div class="flex justify-between bg-white rounded-lg shadow-lg p-10 mx-2">
+        <div class="flex justify-between bg-gray-200 rounded-lg shadow-lg p-10 mx-2">
             <!-- User information form -->
             <form id="checkoutForm" class="w-1/2 mr-5">
                 <h2 class="text-2xl font-bold mb-5">Checkout</h2>

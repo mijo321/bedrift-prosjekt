@@ -24,8 +24,9 @@ function typing() {
         }
     }
     currentWord = isDeleting ? words[i].substring(0, j--) : words[i].substring(0, ++j);
+    
 
-    document.querySelector('.hero h2 span').innerText = currentWord;
+    document.querySelector('.hero h2 animated').innerText = currentWord;
     setTimeout(typing, isDeleting ? 400 : 100);
 
 }
