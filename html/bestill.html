@@ -8,12 +8,13 @@
     <title>FreshBite - Sunne Måltidskasser</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/navbar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="/carousel.css">
 </head>
 <body class="overscroll-y-none bg-green-800">
     <nav class="bg-green-900 flex justify-between items-center h-16">
         <a href="index.html" class="text-white text-4xl ml-4">FreshBite</a>
         
+        <a href="cart.html" class="text-white text-2xl ml-4"><i class="fas fa-shopping-cart"></i></a>
         <input type="checkbox" id="active">
         <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
         <div class="wrapper">
@@ -30,33 +31,55 @@
 
     <section class="ml-28">
         <span class="text-yellow-100 text-3xl">Food Gallary</span>
-
-        <div class="mt-4 flex flex-row space-x-3">
-            <div class="flex flex-col space-y-3">
-                <div class="w-56 overflow-hidden rounded-2xl bg-zinc-700 transition-all duration-500 hover:scale-105">
-                    <div class="absolute -z-10 m-2 hover:z-10">
-                        <span class="text-4xl text-white" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Pizzza</span>
+        <div id="carousel" class="flex overflow-x-scroll scrollbar-hide">
+            <div class="w-56 overflow-hidden rounded-2xl bg-zinc-700 transition-all duration-500 scale-105 hover:scale-110">
+                <div class="absolute m-2">
+                    <span class="text-4xl text-white" style="font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif">Pizzza</span>
+                    <div class="additional-info opacity-0 hover:opacity-100 transition-opacity duration-500">
                         <p class="text-sm text-white mt-1">3/5</p>
                         <p class="text-xs text-white w-52 mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis natus aliquam adipisci perferendis possimus ad, laboriosam sapiente dignissimos nesciunt reiciendis quo repellat minima, molestiae tempora, officiis accusamus nulla deserunt. Quas.</p>
+                        <div class="">
+                            <button class="addToCart bg-green-500 text-white font-bold py-2 px-4 rounded" data-item="Pizzza|/imgaes/pizza.jpg">Add to Cart</button>
+                        </div>
                     </div>
-                    <img class="hover:opacity-20" src="/imgaes/8316a9e8-1c75-474e-9079-76a62fbdedfb.jpg" alt="error">
                 </div>
-                
+                <img class="carousel-image hover:opacity-20" src="/imgaes/pizza.jpg" alt="error">
             </div>
-            <div class="flex flex-col space-y-3">
-                
+
+            <div class="w-56 overflow-hidden rounded-2xl bg-zinc-700 transition-all duration-500 scale-105 hover:scale-110">
+                <div class="absolute m-2">
+                    <span class="text-4xl text-white" style="font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif">BBQ</span>
+                    <div class="additional-info opacity-0 hover:opacity-100 transition-opacity duration-500">
+                        <p class="text-sm text-white mt-1">3/5</p>
+                        <p class="text-xs text-white w-52 mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis natus aliquam adipisci perferendis possimus ad, laboriosam sapiente dignissimos nesciunt reiciendis quo repellat minima, molestiae tempora, officiis accusamus nulla deserunt. Quas.</p>
+                        <div class="">
+                            <button class="addToCart bg-green-500 text-white font-bold py-2 px-4 rounded" data-item="BBQ|/imgaes/bbq.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <img class="carousel-image hover:opacity-20" src="/imgaes/bbq.jpg" alt="error">
             </div>
-            <div class="flex flex-col space-y-3">
-                
+
+            <div class="w-56 overflow-hidden rounded-2xl bg-zinc-700 transition-all duration-500 scale-105 hover:scale-110">
+                <div class="absolute m-2">
+                    <span class="text-4xl text-white" style="font-family:Impact,Haettenschweiler,'Arial Narrow Bold',sans-serif">SALAT</span>
+                    <div class="additional-info opacity-0 hover:opacity-100 transition-opacity duration-500">
+                        <p class="text-sm text-white mt-1">3/5</p>
+                        <p class="text-xs text-white w-52 mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis natus aliquam adipisci perferendis possimus ad, laboriosam sapiente dignissimos nesciunt reiciendis quo repellat minima, molestiae tempora, officiis accusamus nulla deserunt. Quas.</p>
+                        <div class="">
+                            <button class="addToCart bg-green-500 text-white font-bold py-2 px-4 rounded" data-item="Salat|/imgaes/salat.jpg">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <img class="carousel-image hover:opacity-20" src="/imgaes/salat.jpg" alt="error">
             </div>
-            <div class="flex flex-col space-y-3">
-                
-            </div>
+            
 
         </div>
-
     </section>
-
     
+
+    <script src="../kjøping.js"></script>
+    <script src="/carousel.js"></script>
 </body>
 </html>

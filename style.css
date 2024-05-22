@@ -3,10 +3,10 @@
 	--index: calc(1vw + 1vh);
 }
 h2 {
-  font-size: calc(var(--index) * 2.5);
+  font-size: calc(var(--index) * 2);
 }
 span {
-  font-size: calc(var(--index) * 2.5);
+  font-size: calc(var(--index) * 2);
 }
 p {
   font-size: calc(var(--index)* 0.6)

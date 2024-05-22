@@ -1,14 +1,23 @@
-.carousel-image {
-  display: none;
-  width: 50vh;
-  height: 25vh;
-  object-fit: cover;
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
 }
 
-.prev, .next {
-  background: rgba(255, 255, 255, 0.5);
-  border: none;
-  padding: 1rem;
-  border-radius: 50%;
+.carousel-image {
+  min-width: 16rem;
+  height: 16rem;
+  object-fit: cover;
+  border-radius: 0.375rem;
+  margin: 0.5rem;
+  transition: transform 0.5s;
   cursor: pointer;
 }
+
+
+/* styles.css */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+
